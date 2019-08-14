@@ -15,6 +15,7 @@ module.exports = {
                 'components': resolve('src/components'),
                 'api': resolve('src/api'),
                 'mixins': resolve('src/mixins'),
+                'store': resolve('src/store'),
                 'service': resolve('src/service'),
             }
         }
