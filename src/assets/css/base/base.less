@@ -1,0 +1,713 @@
+@charset 'utf-8';
+/*css reset start*/
+
+* {
+    vertical-align: baseline;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    .scrollbar;
+}
+
+body,
+blockquote,
+figure {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+hr,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+dd {
+    margin-left: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+em,
+b,
+i {
+    font-style: normal;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0;
+}
+
+fieldset {
+    legend {
+        font-weight: bold;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+legend {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
+    ;
+    font-size: 13px
+}
+
+/*css reset end*/
+
+/*Browser default style start*/
+
+//解决Chrome浏览器表单自动填充默认样式
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: inset 0 0 1000px #fff !important;
+    box-shadow: inset 0 0 1000px #fff !important;
+    -webkit-transition-delay: 9999s;
+    -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+}
+
+/*Browser default style end*/
+
+/*font-size*/
+
+.fz-12 {
+    font-size: 12px !important;
+}
+
+.fz-13 {
+    font-size: 13px !important;
+}
+
+.fz-14 {
+    font-size: 14px !important;
+}
+
+.fz-15 {
+    font-size: 15px !important;
+}
+
+.fz-16 {
+    font-size: 16px !important;
+}
+
+.fz-17 {
+    font-size: 17px !important;
+}
+
+.fz-18 {
+    font-size: 18px !important;
+}
+
+.fz-19 {
+    font-size: 19px !important;
+}
+
+.fz-20 {
+    font-size: 20px !important;
+}
+
+.fz-21 {
+    font-size: 21px !important;
+}
+
+.fz-22 {
+    font-size: 22px !important;
+}
+
+.fz-23 {
+    font-size: 23px !important;
+}
+
+.fz-24 {
+    font-size: 24px !important;
+}
+
+.fz-25 {
+    font-size: 25px !important;
+}
+
+/*height*/
+
+.h-32 {
+    height: 32px;
+}
+
+/*line-height*/
+
+.lh-22 {
+    line-height: 22px;
+}
+
+.lh-26 {
+    line-height: 26px;
+}
+
+.lh-28 {
+    line-height: 28px;
+}
+
+.lh-30 {
+    line-height: 30px;
+}
+
+.lh-32 {
+    line-height: 32px;
+}
+
+.lh-us {
+    line-height: unset;
+}
+
+/*margin*/
+
+.umar-l2 {
+    margin-left: 2px !important;
+}
+
+.umar-l5 {
+    margin-left: 5px !important;
+}
+
+.umar-l10 {
+    margin-left: 10px !important;
+}
+
+.umar-l15 {
+    margin-left: 15px !important;
+}
+
+.umar-l20 {
+    margin-left: 20px !important;
+}
+
+.umar-l30 {
+    margin-left: 30px !important;
+}
+
+.umar-b0 {
+    margin-bottom: 0 !important;
+}
+
+.umar-b5 {
+    margin-bottom: 5px !important;
+}
+
+.umar-b8 {
+    margin-bottom: 5px !important;
+}
+
+.umar-b10 {
+    margin-bottom: 10px !important;
+}
+
+.umar-b15 {
+    margin-bottom: 15px !important;
+}
+
+.umar-b20 {
+    margin-bottom: 20px !important;
+}
+
+.umar-b25 {
+    margin-bottom: 25px !important;
+}
+
+.umar-b30 {
+    margin-bottom: 30px !important;
+}
+
+.umar-a10 {
+    margin: 10px !important;
+}
+
+.umar-a15 {
+    margin: 15px !important;
+}
+
+.umar-a20 {
+    margin: 20px !important;
+}
+
+.umar-r0 {
+    margin-right: 0px !important;
+}
+
+.umar-r5 {
+    margin-right: 5px !important;
+}
+
+.umar-r10 {
+    margin-right: 10px !important;
+}
+
+.umar-r15 {
+    margin-right: 15px !important;
+}
+
+.umar-r20 {
+    margin-right: 20px !important;
+}
+
+.umar-r30 {
+    margin-right: 30px !important;
+}
+
+.umar-t3 {
+    margin-top: 3px !important;
+}
+
+.umar-t5 {
+    margin-top: 5px !important;
+}
+
+.umar-t7 {
+    margin-top: 7px !important;
+}
+
+.umar-t10 {
+    margin-top: 10px !important;
+}
+
+.umar-t15 {
+    margin-top: 15px !important;
+}
+
+.umar-t20 {
+    margin-top: 20px !important;
+}
+
+.umar-t30 {
+    margin-top: 30px !important;
+}
+
+.umar-t40 {
+    margin-top: 40px !important;
+}
+
+.umar-lr5 {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+
+.umar-lr10 {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.umar-lr15 {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+
+.umar-tb5 {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+.umar-tb10 {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.umar-tb30 {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+
+/*padding*/
+
+.uinn-a5 {
+    padding: 5px !important;
+}
+
+.uinn-a7 {
+    padding: 7px !important;
+}
+
+.uinn-a10 {
+    padding: 10px !important;
+}
+
+.uinn-a15 {
+    padding: 15px !important;
+}
+
+.uinn-a20 {
+    padding: 20px !important;
+}
+
+.uinn-a30 {
+    padding: 30px !important;
+}
+
+.uinn-l7 {
+    padding-left: 7px !important;
+}
+
+.uinn-l10 {
+    padding-left: 10px !important;
+}
+
+.uinn-r5 {
+    padding-right: 5px !important;
+}
+
+.uinn-r7 {
+    padding-right: 7px !important;
+}
+
+.uinn-r10 {
+    padding-right: 10px !important;
+}
+
+.uinn-r20 {
+    padding-right: 20px !important;
+}
+
+.uinn-r30 {
+    padding-right: 30px !important;
+}
+
+.uinn-b5 {
+    padding-bottom: 5px !important;
+}
+
+.uinn-b10 {
+    padding-bottom: 10px !important;
+}
+
+.uinn-b15 {
+    padding-bottom: 15px !important;
+}
+
+.uinn-b20 {
+    padding-bottom: 20px !important;
+}
+
+.uinn-t5 {
+    padding-top: 5px !important;
+}
+
+.uinn-t10 {
+    padding-top: 10px !important;
+}
+
+.uinn-t15 {
+    padding-top: 15px !important;
+}
+
+.uinn-t20 {
+    padding-top: 20px !important;
+}
+
+.uinn-tb5 {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.uinn-tb10 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.uinn-tb15 {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+.uinn-tb20 {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.uinn-lr4 {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+}
+
+.uinn-lr5 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.uinn-lr10 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.uinn-lr15 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.uinn-lr20 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.uinn-lr30 {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+/*display*/
+
+.ds-tc {
+    display: table-cell !important;
+}
+
+.ds-ib {
+    display: inline-block !important;
+    *display: inline;
+    *zoom: 1;
+}
+
+.ds-n {
+    display: none !important;
+}
+
+.ds-b {
+    display: block !important;
+}
+
+/*text-align*/
+
+.ta-l {
+    text-align: left !important;
+}
+
+.ta-c {
+    text-align: center !important;
+}
+
+.ta-r {
+    text-align: right !important;
+}
+
+/*vertical-align*/
+
+.va-t {
+    vertical-align: top !important;
+}
+
+.va-m {
+    vertical-align: middle !important;
+}
+
+.va-b {
+    vertical-align: bottom !important;
+}
+
+/*float*/
+
+.f-l {
+    float: left !important;
+}
+
+.f-r {
+    float: right !important;
+}
+
+/*point*/
+
+.c-p {
+    cursor: pointer !important;
+}
+
+.c-d {
+    cursor: default !important;
+}
+
+/*position*/
+
+.p-r {
+    position: relative !important;
+}
+
+.p-a {
+    position: absolute !important;
+}
+
+.p-s {
+    position: static !important;
+}
+
+/*width/height*/
+
+.w-p-50 {
+    width: 50% !important;
+}
+
+.w-p-100 {
+    width: 100% !important;
+}
+
+.w-50 {
+    width: 50px !important;
+}
+
+.w-60 {
+    width: 60px !important;
+}
+
+.w-80 {
+    width: 80px !important;
+}
+
+.w-100 {
+    width: 100px !important;
+}
+
+.w-120 {
+    width: 120px !important;
+}
+
+.w-150 {
+    width: 150px !important;
+}
+
+.w-180 {
+    width: 180px !important;
+}
+
+.w-200 {
+    width: 200px !important;
+}
+
+.w-220 {
+    width: 220px !important;
+}
+
+.w-250 {
+    width: 250px !important;
+}
+
+.w-300 {
+    width: 300px !important;
+}
+
+.w-350 {
+    width: 350px !important;
+}
+
+.w-400 {
+    width: 400px !important;
+}
+
+.h-p-100 {
+    height: 100% !important;
+}
+
+/*其他样式*/
+
+.op-o {
+    opacity: 0 !important;
+    filter: alpha(opacity=0) !important;
+}
+
+.wb-ba {
+    word-break: break-all !important;
+}
+
+.ov-h {
+    overflow: hidden !important;
+}
+
+.fs-n {
+    font-style: normal !important;
+}
+
+.fw-b {
+    font-weight: bold !important;
+}
+
+.fw-br {
+    font-weight: bolder !important;
+}
+
+.fw-n {
+    font-weight: normal !important;
+}
+
+.us-n {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    -o-user-select: none !important;
+    user-select: none !important;
+}
+
+.ellipsis {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    -ms-text-overflow: ellipsis !important;
+    text-overflow: ellipsis !important;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+
+.scrollbar() {
+    //滚动条整体的样式
+    &::-webkit-scrollbar {
+        background-color: transparent;
+        width: 4px;
+        height: 8px;
+    } //滑块部分
+    &::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        background-color: #7a7a8c;
+        width: 4px;
+        height: 4px;
+    } // 轨道部分
+    &::-webkit-scrollbar-track {
+        width: 4px;
+        height: 4px;
+        background: transparent;
+    }
+}
