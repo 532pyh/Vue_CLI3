@@ -7,6 +7,18 @@ import 'css/base/base.less';
 
 Vue.mixin(mixins);
 Vue.config.productionTip = false
+import 'element-ui/lib/theme-chalk/index.css';
+//注册element-ui组件
+import {
+    Button,
+} from 'element-ui';
+
+const components = [
+    Button,
+];
+for (let k of components) {
+    Vue.use(k);
+}
 
 new Vue({
     router,
