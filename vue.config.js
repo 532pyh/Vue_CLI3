@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 function resolve(dir) {
     return path.resolve(__dirname, dir)
@@ -18,7 +19,14 @@ module.exports = {
                 'store': resolve('src/store'),
                 'service': resolve('src/service'),
             }
-        }
+        },
+        plugins: [
+            new webpack.ProvidePlugin({
+                $:"jquery",
+                jQuery:"jquery",
+                "windows.jQuery":"jquery"
+            })
+        ]
     },
     devServer: {
         port: 8038,
