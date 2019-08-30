@@ -6,7 +6,7 @@ const routes = [
     {
         path: '/',
         name: 'home',
-        component: load('home'),
+        component: load('Home'),
         meta: {
             title: '首页'
         }
