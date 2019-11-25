@@ -6,7 +6,6 @@ import mixins from './mixins';
 import 'api/axios';
 import 'css/base/base.less';
 import 'css/base/element_theme.scss';
-import $ from 'jquery';
 Vue.mixin(mixins);
 Vue.config.productionTip = false;
 //注册element-ui组件
