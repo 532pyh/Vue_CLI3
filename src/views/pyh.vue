@@ -8,7 +8,7 @@
 export default {
     data(){
         return{
-            tip:'欢迎使用Vue项目'
+            tip:'欢迎使用Vue项目pyh'
         }
     },
     mounted() {
@@ -17,7 +17,7 @@ export default {
     methods: {
         toPyh(){
             this.$router.push({
-                path: '/pyh'
+                path: '/'
             })
         }
     }
